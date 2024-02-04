@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+    box-sizing: border-box;
+
+}
+/* début css menu déroulant */
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    
+    
+    
+  }
+  
+  .bar1, .bar2, .bar3 {
+  
+    width: 35px;
+    height: 5px;
+    background-color: rgb(80, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+#menu-deroulant-2 {
+    background-color: #a24f007a;
+    margin-left: 820px;
+    
+    
+  }
+
+  
+  .title-section {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 1rem;
+    -webkit-box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+  }
+  
+  .title-section #button-2 {
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.5s;
+    margin-left: 77px;
+  }
+
+  .content-section {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+    padding: 0 20px;
+    
+    
+  }
+  
+  #menu-deroulant-2.open .content-section {
+    height: auto;
+    visibility: visible;
+    padding: 30px 20px;
+    color: rgb(78, 0, 0);
+    
+    
+  
+  }
+  
+  #menu-deroulant-2.open .title-section #button-2 {
+    
+    transform: rotate(90deg);
+    
+  }
+/* fin css menu déroulant */
+
+
+
+section{
+    padding-bottom: 150px;
+}
+nav{
+    display: flex; 
+    justify-content: space-between;
+   padding: 70px;
+   padding-top: 20px;
+   
+} 
+.logo{
+    width: 50%;
+   
+  }
+  
+  nav a{
+      text-decoration: none;
+      outline: none;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     color: rgb(172, 13, 13);   
+     font-size: 40px; 
+     font-style: normal;
+     font-weight: normal;  
+  }
+  
+  .navigation{
+      display: inline-block;
+      justify-content: right;
+      padding-left: 40px;
+    
+  }
+
+.imagefond{
+    width: 100%;
+    height: 100%;
+    
+    
+    background-size: cover;
+    background-image: url(IMAGES/background.png);
+
+}
+
+.overlay{
+
+    width: 100%;
+    height: 100%;  
+     background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+
+
+
+
+
+
+.concert{
+    margin-top: 35px;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 50px;
+    background-color: rgba(9, 9, 9, 0.60);
+    border-radius: 20px;
+    padding: 30px;
+    padding-left: 60px;
+}
+
+.date{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background-color: rgb(249, 196, 51);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    justify-content: left;
+
+
+    
+}
+
+.infos{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    
+}
+.lieu{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.infos p{
+    font-size: 18px;
+}
+
+
+.ticket{
+  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-left: 830px;
+    margin-top: 65px;
+    position: absolute;
+  
+}
+.ticketlien{
+    color: rgb(188, 13, 13) ;
+    padding: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    white-space: nowrap;
+    background-color:rgb(249, 196, 51) ;
+}
+
+
+@media screen and (min-width:1560px ) {
+    .ticket{
+        margin-left: 1230px;
+    
+    }
+    .navigation{
+        font-size: 200%;
+    }
+}
+
+
+@media screen and (max-width:1170px ) {
+    body{
+        flex-direction: column;
+    }
+    .navigation{
+        padding-left: 50%;
+      
+    }
+    .ticket{
+        margin-left: 550px;
+        font-size: 20px;
+        
+    }
+
+}
+
+@media screen and (max-width:870px ) {
+    .date{
+        font-size: 15px;
+        padding: 20px;
+        
+    }
+    .infos{
+        padding-top: 25px;
+    }
+    .lieu{
+        font-size: 20px;
+
+    }
+    .infos p{
+        font-size: 14px
+    }
+    .infos h2{
+        font-size: 15px
+    }
+    .ticket{
+        font-size: 15px;
+        margin-left: 400px;
+        margin-top: 40px;
+    }
+    .ticketlien{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:420px ) {
+    .imagefond{
+        width: 111%;
+        height: 100%;
+    }
+    .concert{
+        margin-top: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 20px;
+        padding: 15px;
+        padding-left: 30px;
+    }
+    .date{
+        font-size: 10px;
+        padding: 20px;
+        
+    }
+    .infos{
+        padding-top: 5px;
+    }
+    .lieu{
+        font-size: 10px;
+
+    }
+    .infos p{
+        font-size: 8px
+    }
+    .infos h2{
+        font-size: 10px
+    }
+    .ticket{
+        font-size: 10px;
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+    .ticketlien{
+        padding: 10px;
+    }
+    .navigation{
+        padding-left: 20%;
+      
+    }
+
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="style p1.css">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TSEW THE KID</title>
+
+    <style>
+     
+   
+      </style>
+</head>
+
+<body>
+    <main>
+
+      <!--MENU DEROULANT-->
+<header>
+   <div class="imagefond">
+
+    <div class="overlay">
+<!-- navigation qui contient le logo de l'artiste ainsi que le menu déroulant-->
+    <nav>
+        <a href="HTML P1.html"><img class="logo" src="IMAGES/tsew_logo_transparent_rouge_Pl@2x.png" alt=""></a>
+        <div id="menu-deroulant" >
+            <div class="title-section"> 
+              <!-- span = basile pour identifié un bouton avec un css et js spécifique-->
+              <span id="button"> 
+                <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>  <!-- au clic la fonction myfunction se déclenche dans le js. -->
+                <div class="bar2"></div>
+                <div class="bar3"></div> <!-- les 3 barres du bouton menu-->
+            </div> 
+              </span>
+        
+          </div>
+      <!-- éléments du menu qui renvoient à diff pages-->
+            <div class="content-section">
+              <ul>
+                <li> <a href="HTML PMUSIQUES.html">MUSIQUES</a></li>
+                <li> <a href="HTML PCONCERTS.html">CONCERTS</a></li>
+                <li><a href="http://onfinirapeutetreheureux.com">MERCH</a></li>
+              </ul>
+            </div>
+          </div>
+
+     
+        
+       
+    </nav>
+
+    <div class="bandeau">
+        <div>
+            <h2>JEUDI 26 JANVIER 2024 </h2>
+            <h1>TSEW THE KID </h1>
+                <p> CENON.        20:00.        ROCHER DE PALMER</p>
+        </div>      
+ 
+        <a class="bouton" href="https://dice.fm/partner/spotify/event/d8omv-tsew-the-kid-25th-jan-rocher-de-palmer-cenon-tickets?dice_source=spotify&utm_source=spotify&utm_medium=referral">PRENDRE SES PLACES</a>
+    </div> 
+</header>   
+
+
+<div class="description">
+    <h1>TSEW THE KID </h1>
+        <p>Le petit « kid » de Madagascar a parcouru un sacré chemin 
+            depuis l’enchaînement parfait de ses premiers EP (Begin, 
+            Karma et Mora Mora). Signé chez Panenka Music, il sort en 
+            2019 les quinze titres d’une première mixtape, Diavolana, 
+            puis poursuit avec les quatre titres de Lofi. Des séquences 
+            discographiques qui ouvrent la voie aux dix-huit chansons de 
+            son premier véritable album, Ayna (2021), qui impressionne 
+            par la sensibilité, les nuances et les multiples facettes de cet 
+            artiste de 24 ans refusant les frontières et les imposés du « 
+            rap game » à la française. Entre r’n’b smooth et hip-hop chill, 
+            l’album oscille entre pop urbaine, rythme funky et latino, piano 
+            et guitare, au long de mélodies tranquilles contant 
+            majoritairement peines et déboires amoureux. Même si Tsew 
+            The Kid a troqué le home-studio de son garage pour les gros 
+            studios parisiens, rien n’a fondamentalement changé sur ce 
+            deuxième album, On finira peut-être heureux, sorti début 
+            2023. Entre rap, pop et variété classe, le franco-malgache 
+            continue d’écrire simplement des chansons aux mélodies 
+            travaillées, des chansons au verbe tranquille et entièrement 
+            dédiées à l’amour qui promettent de résonner comme des 
+            mantras lors de ses concerts enflammés.
+            
+        </p>
+           <div class="photodescription">
+                <img src="IMAGES/Tsew-The-Kid-FB-1-Redim.jpg" alt="">
+            </div>
+   
+</div>
+
+
+
+<div class="reseaux">
+    <a class="icone" href="https://www.instagram.com/tsew_tk/"><img src="IMAGES/instagram.png" alt=""></a>
+    <a class="icone" href="https://open.spotify.com/intl-fr/artist/0SXZ0s0MoLOjw4Af6i3OGC"><img src="IMAGES/logo-spotify.png" alt=""></a>
+   
+</div>
+
+<div class="youtube">
+    <iframe width="1015" height="571" src="https://www.youtube.com/embed/6i7SxxY5VZA?si=IBphe7fBY8LokaY3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <br>
+  <br>
+  </div>
+</div>
+</div>
+
+<!-- formulaire d'inscription -->
+
+<div class="form-container">
+  <h2>Formulaire d'inscription</h2>
+  <br>
+  <form id="registrationForm" onsubmit="submitForm(event)">
+
+    <!-- contenu principal du formulaire -->
+
+      <label for="firstName">Prénom:</label>
+      <input type="text" id="firstName" name="firstName" required minlength="2">
+      <br>
+
+      <label for="lastName">Nom:</label>
+      <input type="text" id="lastName" name="lastName" required minlength="2">
+    <br>
+      <label for="address">Adresse:</label>
+      <input type="text" id="address" name="address" required minlength="2">
+      <br>
+
+   <label for="city">Ville:</label>
+      <input type="text" id="city" name="city" required minlength="2">
+      <br>
+<!-- format d'un email. définit une expression régulière d'un format email. Et qui vérifie qu'il y ait bien un nom d'utilisateur suivi d'un @-->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+    <br>
+
+      <label for="postalCode">Code Postal:</label>
+      <input type="text" id="postalCode" name="postalCode" required minlength="5" maxlength="5">
+    <br>
+      <label for="country">Pays:</label>  <!--toutes les options pour choisir un pays-->
+      <select id="country" name="country" required>
+          <option value="null">Selectionner un pays</option>
+          <option value="Français">France</option>
+          <option value="Tunisien">Tunisie</option>
+          <option value="Allemand">Allemagne</option>
+          <option value="Comorien">Royaume-Unis</option>
+          <option value="Vietnamien">Vietname</option>
+          <option value="Belge">Belgique</option>
+          <option value="Portugais">Portugal</option>
+          <option value="Cambodge">Cambodge</option>
+          <option value="Chinois">Chine</option>
+          <option value="Algérie">Algérie</option>
+          <option value="Maroc">Maroc</option>
+          <option value="Sénégal">Sénégal</option>
+          <option value="Colombie">Colombie</option>
+          <option value="Bulgarie">Bulgarie</option>
+          
+      </select>
+      <br>
+<!--le mot de passe doit contenir au moins une lettre et un chiffre, et avoir une longueur minimale de 6 caractères. -->
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" name="password" required minlength="6" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$">
+      <br>
+<!--presque les mêmes attribus au champ précédent mais ici l'utilisateur est libre de mettre ce qu'il veut, du moment que le mot de passe est identique-->
+      <label for="confirmPassword">Confirmez le mot de passe:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+      <br>
+      <br>
+
+      <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+      <label for="acceptTerms">J'accepte les conditions d'utilisation</label>
+      <br>
+      
+      <!--bouton qui valide l'insciption -->
+      <button type="submit">S'inscrire</button>
+  </form>
+
+  <!--Message de confirmation mais considéré comme caché et il s'affichera lorsque sera soumis -->
+
+  <div id="confirmationMessage" class="hidden">
+      <p>Formulaire soumis GG !</p>
+  </div>
+<!-- messages d'erreurs spécifiques dans le javascript -->
+  <div id="errorMessage" class="hidden">
+      <p id="errorText"></p>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+ </main>   
+</body>
+</html>

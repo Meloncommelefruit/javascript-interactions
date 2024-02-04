@@ -1,0 +1,627 @@
+*{
+    
+
+    padding: 0px;
+    margin: 0px;
+ 
+
+}
+/* début css menu déroulant */
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    
+    
+    
+  }
+  
+  .bar1, .bar2, .bar3 {
+  
+    width: 35px;
+    height: 5px;
+    background-color: rgb(80, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+#menu-deroulant {
+    background-color: #a24f007a;
+    margin-left: 820px;
+    
+    
+  }
+
+  
+  .title-section {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 1rem;
+    -webkit-box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+  }
+  
+  .title-section #button {
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.5s;
+    margin-left: 77px;
+  }
+
+  .content-section {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+    padding: 0 20px;
+    
+    
+  }
+  
+  #menu-deroulant.open .content-section {
+    height: auto;
+    visibility: visible;
+    padding: 30px 20px;
+    color: rgb(78, 0, 0);
+    
+    
+  
+  }
+  
+  #menu-deroulant.open .title-section #button {
+    
+    transform: rotate(90deg);
+    
+  }
+/* fin css menu déroulant */
+
+/*début css du formulaire */
+
+
+  .form-container {
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgba(78, 0, 0, 0.459);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.4px;
+    box-shadow: 0 0 10px black;
+
+    
+}
+
+.form-container h2{
+    letter-spacing: 1px;
+}
+.form-container button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    margin: 15px auto;
+    font-size: 20px;
+}
+.registrationForm{
+    flex-direction: column;
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+
+
+
+#confirmationMessage, #errorMessage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#errorMessage {
+    background-color: #ffebee;
+    padding: 10px;
+}
+input{
+    margin: 5px;
+    padding: 3px;
+}
+
+button[type="submit"] {
+   width: 100%;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   background-color: rgb(197, 155, 38);
+   color: rgb(188, 13, 13);
+}
+
+
+
+/*fin css du formulaire */
+
+
+
+
+
+.logo{
+    width: 20%;
+    position: absolute;
+}
+ 
+  
+  .content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+main{
+   
+    background-color: rgb(27, 1, 2);
+ 
+}
+
+.imagefond{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(IMAGES/maxresdefault.jpg);
+
+}
+.overlay{
+
+    width: 100%;
+    height: 100vh;  
+     background-color: rgba(0, 0, 0, 0.55);
+}
+
+nav{
+    display: flex; 
+    justify-content: space-between;
+   padding: 70px;
+   padding-top: 20px;
+   position: relative;
+   
+} 
+
+
+
+a{
+    text-decoration: none;
+    outline: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(80, 0, 0);   
+   font-size: 25px; 
+   font-style: normal;
+   font-weight: normal;  
+}
+
+.navigation{
+    display: inline-block;
+    justify-content: right;
+    padding-left: 30px;
+  
+}
+
+
+
+
+
+
+.bandeau{
+    font-size: 45px;
+   background-color: rgba(0, 0, 0, 0.5);
+   
+     font-size: 80%;
+    height: 30%;
+    margin-top: 20%;
+    margin-top: 380px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px
+}
+
+
+.bandeau h1 {
+    color: white; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+.bandeau h2{
+    color: rgb(249, 196, 51);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+.bandeau p{
+color: white;
+font-size: 25px;
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 20px;
+letter-spacing: 2px;
+
+}
+.bouton{
+    display: inline-block;
+    margin-right: 10%;
+
+    color: rgb(188, 13, 13) ;
+    background-color:rgb(249, 196, 51) ;
+    text-align: center;
+   padding: 25px;
+   border-radius: 5px;
+   margin-left: 500px;
+   margin-right: 50px;
+   font-size: 25px;
+   white-space: nowrap;
+    }
+  
+
+
+.description{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 40px;
+    margin: 250px;
+    gap: 20px;
+    height: 450px;
+    width: 950px;
+}
+
+.description h1{
+    color:rgb(188, 13, 13)  ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+.description p{
+    color: rgb(212, 212, 212);
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.photodescription img{
+    border-radius: 50px;
+    height: 50vh;
+    width: 50vh;
+    align-items: right;
+    
+
+}
+
+.youtube{
+    display: flex;
+    justify-content: center;
+    padding: 250px;
+    
+
+}
+
+.reseaux{ 
+    background-color: rgb(249, 196, 51) ;
+    padding-left:  290px;
+    justify-content: center;
+    margin-right: 1000px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 10px;
+   
+}
+
+.icone img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+.iconeytb img{
+    width: 10%;
+    height: 10%;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1560px ) {
+    nav{
+        gap: 20%;
+    }
+    .logo{
+        width: 60%;
+    }
+    .bouton{
+        margin-left: 50%;
+    }
+    .description{
+        height: 60%;
+        width: 60%;
+     
+    }
+    .description p{
+        font-size: 120%;
+    }
+    .photodescription img{
+     
+        height: 60vh;
+        width: 60vh;
+     
+    }
+}
+
+
+
+@media screen and (max-width:1170px ) {
+    body{
+        flex-direction: column;
+    }
+    nav{
+        gap: 0%;
+    }
+   
+    .navigation{
+        font-size: 200%;
+    }
+    .bandeau{
+        display: flex;
+        padding-left: auto;
+        margin-top: 15%;
+        white-space: nowrap;
+    }
+    .bandeau h1 {
+    
+        font-size: 300%;
+    }
+    .bandeau h2{
+       
+        font-size: 200%;
+       
+    }
+    .bandeau p{
+    font-size: 150%;
+    }
+    .bouton{
+        margin-left: 300px;
+    }
+    .description{
+        height: 100%;
+        width: 70%;
+       
+        margin: 10%;
+        gap: 50px;
+    }
+    .description p{
+        font-size: 60%;
+    }
+    .description h1{
+        font-size: 150%;
+    }
+    .photodescription img{
+       
+        height: 30vh;
+        width: 30vh;
+    }
+    .reseaux{ 
+        width: 30%;
+        padding-left:  50%;
+        justify-content: center;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+       
+    }
+    
+    .icone img{
+        width: 10%;
+        height: 10%;
+    
+    }
+}
+
+@media screen and (max-width:870px ) {
+    body{
+        flex-direction: column;
+    }
+    a{
+        font-size: 30px;
+    }
+    .navigation{
+        padding-left: 50%;
+      
+    }
+  
+    .bandeau{
+        display: inline-block;
+        padding-top: 50px; 
+        width: 88%;
+        padding-left: auto;
+        margin-top: 25%;
+    }
+    .bandeau h1 {
+    
+        font-size: 200%;
+    }
+    .bandeau h2{
+       
+        font-size: 150%;
+       
+    }
+    .bandeau p{
+    font-size: 150%;
+    }
+    .bouton{
+       font-size: 15px;    
+    }
+    .description{
+        height: 100%;
+        width: 70%;
+       
+        margin: 10%;
+        gap: 50px;
+    }
+    .description p{
+        font-size: 70%;
+    }
+    .description h1{
+        font-size: 150%;
+    }
+    .photodescription img{
+       
+        height: 10vh;
+        width: 10vh;
+    }
+    .reseaux{ 
+        width: 30%;
+        padding-left:  50%;
+        justify-content: center;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+       
+    }
+    
+    .icone img{
+        width: 10%;
+        height: 10%;
+    
+    }
+ 
+}
+
+@media screen and (max-width:420px ) {
+    body{
+        flex-direction: column;
+        
+    }
+    main{
+        background-color: rgb(27, 1, 2);
+        width: 100%;
+    }
+
+    .imagefond{
+        width: 100%;
+        height: 100%;
+
+    }
+    .overlay{
+
+        height: 100%;
+    }
+
+
+    a{
+        font-size: 20px;
+    }
+    .navigation{
+        padding-left: 60%;
+      
+    }
+  
+    .bandeau{
+        display: inline-block;
+        padding-top: 20px; 
+        width: 90%;
+        padding-left: 5%;
+        
+    }
+    .bandeau h1 {
+    
+        font-size: 100%;
+    }
+    .bandeau h2{
+       
+        font-size: 100%;
+       
+    }
+    .bandeau p{
+    font-size: 90%;
+    }
+    .bouton{
+       font-size: 10px;    
+       padding: 15px;
+       margin-left: 10px;
+       margin-right: 10px;
+       margin-top: 5%;
+       margin-bottom: 5%;
+       
+    }
+    .description{
+        height: 100%;
+        width: 70%;
+        padding-left: 20px;
+        margin: 5%;
+        gap: 10px;
+    }
+    .description p{
+        font-size: 60%;
+    }
+    .description h1{
+        font-size: 100%;
+    }
+    .photodescription img{
+       margin-top: 800%;
+        height: 10vh;
+        width: 10vh;
+    }
+    .reseaux{ 
+        width: 30%;
+        padding-left:  50%;
+        justify-content: center;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+       
+    }
+    
+    .icone img{
+        width: 10%;
+        height: 10%;
+    
+    }
+ 
+}
+
+
+
+
+
+
+

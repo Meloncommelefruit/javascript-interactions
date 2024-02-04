@@ -1,0 +1,503 @@
+*{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    
+
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    
+    
+    
+  }
+  
+  .bar1, .bar2, .bar3 {
+  
+    width: 35px;
+    height: 5px;
+    background-color: rgb(80, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+#menu-deroulant-1 {
+    background-color: #a24f007a;
+    margin-left: 820px;
+    
+    
+  }
+
+  
+  .title-section {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 1rem;
+    -webkit-box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.68);
+  }
+  
+  .title-section #button-1 {
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.5s;
+    margin-left: 77px;
+  }
+
+  .content-section {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+    padding: 0 20px;
+    
+    
+  }
+  
+  #menu-deroulant-1.open .content-section {
+    height: auto;
+    visibility: visible;
+    padding: 30px 20px;
+    color: rgb(78, 0, 0);
+    
+    
+  
+  }
+  
+  #menu-deroulant-1.open .title-section #button-1 {
+    
+    transform: rotate(90deg);
+    
+  }
+
+nav{
+    display: flex; 
+    justify-content: space-between;
+   padding: 70px;
+   padding-top: 20px;
+   position: relative;
+   
+} 
+
+.logo{
+  width: 30%;
+  position: absolute;
+ 
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(172, 13, 13);   
+   font-size: 40px; 
+   font-style: normal;
+   font-weight: normal;  
+}
+
+.navigation{
+    display: inline-block;
+    justify-content: right;
+    padding-left: 30px;
+  
+}
+
+
+.partie1{
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+ 
+}
+
+.cover{
+    width: 40%;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+
+.album2023 p{  
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 20px;
+
+}
+.spotify img{
+    width: 40%;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.liste{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-items: right;
+    margin-right: 20%;
+     
+  
+}
+.liste h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 554px;
+    top: 281px;
+    position: absolute;
+    overflow: visible;
+    width: 701px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Impact;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.liste1 {
+ 
+    margin-top: 150px;
+    padding-right: 100px;
+    white-space: nowrap;
+    text-align: left;
+    border-collapse : separate;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 30px;
+  }
+  table{
+    padding: 20px;
+  }
+
+  .minutes{
+    padding-left: 180px;
+  }
+
+
+
+
+
+
+
+  .partie2{
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+ 
+}
+
+
+
+
+.album2021 p{  
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 20px;
+
+}
+.spotify img{
+    width: 40%;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.liste02{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-items: right;
+    margin-right: 20%;
+     
+  
+}
+.liste02 h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 554px;
+    top: 950px;
+    position: absolute;
+    overflow: visible;
+    width: 701px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Impact;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.liste2 {
+ 
+    margin-top: 150px;
+    padding-right: 100px;
+    white-space: nowrap;
+    text-align: left;
+    border-collapse : separate;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 30px;
+  }
+
+
+
+
+
+
+  .partie3{
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+ 
+}
+
+
+
+.album2020 p{  
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 20px;
+
+}
+.spotify img{
+    width: 40%;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.liste03{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-items: right;
+    margin-right: 20%;
+     
+  
+}
+.liste03 h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 554px;
+    top: 1680px;
+    position: absolute;
+    overflow: visible;
+    width: 701px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Impact;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.liste3 {
+ 
+    margin-top: 150px;
+    padding-right: 100px;
+    white-space: nowrap;
+    text-align: left;
+    border-collapse : separate;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 30px;
+  }
+
+
+
+  @media screen and (max-width:1170px ) {
+    .liste h1{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        left: 30%;
+        top: 45%;
+        font-size: 50px;   
+    }
+    .album2023{
+        width: 200%;
+    }
+    .album2021{
+        width: 210%;
+    }
+    .album2020{
+        width: 200%;
+    }
+    .liste1{
+        font-size: 15px;
+    }
+    .liste2{
+        font-size: 15px;
+      
+    }
+    .liste02 h1{
+        left: 30%;
+        top: 850px;
+        font-size: 50px;
+ 
+    }
+    .liste3{
+        font-size: 15px;
+      
+    }
+    .liste03 h1{
+        left: 30%;
+        top: 1490px;
+        font-size: 50px;
+ 
+    }
+  }
+
+
+
+  @media screen and (max-width:870px ) {
+    body{
+        flex-direction: column;
+        
+    }
+    .navigation{
+        padding-left: 50%;
+      
+    }
+    .liste h1{
+      
+        left: 20%;
+        top: 45%;
+        font-size: 40px;   
+    }
+    .album2023.spotify img{
+        width: 300%;
+        border-radius: 50px;
+     
+    }
+    .spotify img{
+        width: 200%;
+        border-radius: 50px;
+     
+    }
+    
+    .album2023{
+        margin-left: 50px;
+        display: flex;
+        gap: 20px;
+        width: 180%;
+    }
+    .album2021{
+        margin-left: 80px;
+        display: flex;
+        gap: 20px;
+        width: 175%;
+    }
+    .album2020{
+        margin-left: 50px;
+        display: flex;
+        gap: 20px;
+        width: 190%;
+    }
+    .liste1{
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .liste2{
+        font-size: 15px;
+        margin-top: 100px;
+      
+    }
+    .liste02 h1{
+        left: 20%;
+        top: 790px;
+        font-size: 40px;
+ 
+    }
+    .liste3{
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .liste03 h1{
+        left: 20%;
+        top: 1390px;
+        font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width:420px ) {
+    body{
+        flex-direction: column;
+ 
+    }
+    .navigation{
+        padding-left: 200%;
+      
+    }
+ .logo{
+        width: 150%;
+    }
+.partie1{
+    margin-left: 90%;
+}
+    .liste h1{
+      
+        left: 30%;
+        top: 25%;
+        font-size: 30px;   
+    }
+ 
+    .spotify img{
+        width: 800%;
+        border-radius: 50px;
+     
+     
+    }
+       .album2023.spotify img{
+    
+        border-radius: 50px;
+     
+    }
+    .album2023{
+        margin-left: 30px;
+        display: flex;
+        gap: 10px;
+        width: 150%;
+    }
+    .partie2{
+        margin-left: 90%;
+    }
+    .album2021{
+        margin-left: 50px;
+        display: flex;
+        gap: 10px;
+        width: 140%;
+    }
+    .partie3{
+        margin-left: 90%;
+    }
+    .album2020{
+        margin-left: 50px;
+        display: flex;
+        gap: 10px;
+        width: 150%;
+    }
+    .liste1{
+        font-size: 15px;
+        margin-top: 90px;
+        
+
+    }
+    .liste2{
+        font-size: 15px;
+        margin-top: 100px;
+        padding-right: 70px
+      
+    }
+    .liste02 h1{
+        left: 30%;
+        top: 790px;
+        font-size: 30px;
+ 
+    }
+    .liste3{
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .liste03 h1{
+        left: 30%;
+        top: 1390px;
+        font-size: 30px;
+    }
+  }
